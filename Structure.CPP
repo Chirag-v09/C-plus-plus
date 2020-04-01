@@ -12,19 +12,28 @@ struct student
     {
         cout<<name<<endl<<clas<<endl<<roll_no<<endl;
     }
-};
+}s3; // Global
+
+student s4; // Global
 
 int main()
 {
-    student s;
+    student s; // Local
+    student s2 = {"chirag", 15}; // Local
+    s2.roll_no = 171055;
 
-    cout<<"Enter a Name :- ";
+    cout << endl;
+    s2.show();
+    cout << endl;
+
+    cout<<"Enter Name :- ";
     getline(cin, s.name);
-    cout<<"Enter a Class :- ";
+    cout<<"Enter Class :- ";
     cin>>s.clas;
-    cout<<"Enter a Roll No. :- ";
+    cout<<"Enter Roll No. :- ";
     cin>>s.roll_no;
     cout<<"\n";
+
 
     s.show();
 }
