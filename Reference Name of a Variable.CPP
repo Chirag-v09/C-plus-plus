@@ -11,6 +11,7 @@ int main()
     cin>>num;
 
     cout<<endl<<"Value of Number :- "<<num;
-    cout<<endl<<"Value of Reference Number :- "<<num_2<<endl;
+    num_2 += 1;
+    cout<<endl<<"Value of Number and Reference Number after increment :- "<<num<< " , " <<num_2<<endl;
 }
 
