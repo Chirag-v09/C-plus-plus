@@ -26,13 +26,13 @@ public:
         cout << "Constructor 3" << endl;
         a = 10;
     }
-
+/*
     Chirag(Chirag &c) // This is copy constructor here we can't specify Chirag c because as this time we are passing value of a
     {                 // class to this object and hence this Chirag c will call constructor Chirag(Chirag &c) and hence when we
         a = c.a;      // passing value into it then it will call this Chirag(Chirag &c) constructor again and hence go into the
         b = c.a;      // loop so we make reference so that it doesn't mean that we are passing value of one object to another
     }                 // object, Here Chirag(Chirag &c) we are making another name of the actual parameter object and hence no
-                      // other constructor will call.
+                      // other constructor will call. */
     void show()
     {
         cout << endl << a << endl << b << endl;
